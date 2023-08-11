@@ -1,7 +1,9 @@
 packages:
-  - name: webfunctions-python
+  - name: preregistration-verify
     actions:
       - name: preregistration-verify
         runtime: 'python:default'
+  - name: kyc-verify
+    actions:
       - name: kyc-verify
         runtime: 'python:default'
