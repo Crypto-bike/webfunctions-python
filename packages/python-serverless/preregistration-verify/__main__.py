@@ -2,7 +2,6 @@ import requests
 
 def main(event):
       code = event.get("code", "null")
-      console
       response = requests.get(url=f'https://dev.back-ng.crypto-bike.game/preregistration/{code}')
       if (response.status_code == 200):
             with open('success.html', 'r') as file:
