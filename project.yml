@@ -3,6 +3,5 @@ packages:
     actions:
       - name: preregistration-verify
         runtime: 'python:default'
-    actions:
       - name: kyc-verify
         runtime: 'python:default'
