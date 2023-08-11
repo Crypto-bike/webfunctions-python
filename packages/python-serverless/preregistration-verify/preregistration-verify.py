@@ -1,0 +1,16 @@
+import requests
+
+def main(args):
+      code = args.get("code")
+      backend_url = 'https://dev.back-ng.crypto-bike.game/preregistration/' + code + '/'
+      response = requests(backend_url)
+      if (response.status_code == 200):
+            with open('success.html', 'r') as f:
+                  html_string = f.read()
+                  return {"body": html_string}
+      else:
+            with open('error.html', 'r') as f:
+                  html_string = f.read()
+                  return {"body": html_string}
+
+      
