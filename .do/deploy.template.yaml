@@ -8,6 +8,15 @@ functions:
     repo: Crypto-bike/webfunctions-python
   name: py-api
   routes:
-  - path: /
-  source_dir: /
-name: webfunctions-python
+  - path: /kyc-verify
+  source_dir: /kyc-verify
+name: kyc-verify
+- github:
+    branch: master
+    deploy_on_push: true
+    repo: Crypto-bike/webfunctions-python
+  name: py-api
+  routes:
+  - path: /preregistration-verify
+  source_dir: /preregistration-verify
+name: preregistration-verify
