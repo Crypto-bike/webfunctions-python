@@ -1,7 +1,7 @@
 import requests
 
-def main(args):
-      code = args.get("code")
+def main(event):
+      code = event.get("code")
       backend_url = 'https://dev.back-ng.crypto-bike.game/account/verifyMail/' + code + '/'
       response = requests(backend_url)
       if (response.status_code == 200):
