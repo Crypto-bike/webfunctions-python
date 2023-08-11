@@ -1,9 +1,8 @@
 packages:
-  - name: preregistration-verify
+  - name: python-serverless
     actions:
       - name: preregistration-verify
         runtime: 'python:default'
-  - name: kyc-verify
     actions:
       - name: kyc-verify
         runtime: 'python:default'
