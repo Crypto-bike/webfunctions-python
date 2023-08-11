@@ -1,5 +1,7 @@
 packages:
-  - name: sample
+  - name: webfunctions-python
     actions:
-      - name: hello
+      - name: preregister-verify
+        runtime: 'python:default'
+      - name: kyc-verify
         runtime: 'python:default'
